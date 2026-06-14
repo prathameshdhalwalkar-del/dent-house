@@ -163,7 +163,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 w-32 h-32 bg-accent-100/80 backdrop-blur-xl rounded-2xl shadow-card p-4 border border-accent-200/50">
-                <p className="text-lg font-heading font-bold text-accent-600">15+</p>
+                <p className="text-lg font-heading font-bold text-accent-600">10+</p>
                 <p className="text-xs text-dark-500 font-alt">Years Experience</p>
               </div>
             </div>
