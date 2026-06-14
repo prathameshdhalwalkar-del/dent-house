@@ -5,20 +5,20 @@ import { HiPhone, HiMail, HiLocationMarker, HiHeart } from 'react-icons/hi'
 import { FaInstagram, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const quickLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
+  { label: 'Home', href: '/' },
+  { label: 'About', href: '/about' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Services', href: '#services' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Gallery', href: '/#gallery' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 const serviceLinks = [
-  { label: 'Dental Implants', href: '#services' },
-  { label: 'Root Canal', href: '#services' },
-  { label: 'Teeth Whitening', href: '#services' },
-  { label: 'Braces & Aligners', href: '#services' },
-  { label: 'Cosmetic Dentistry', href: '#services' },
+  { label: 'Dental Implants', href: '/services/dental-implants' },
+  { label: 'Root Canal', href: '/services/root-canal-treatment' },
+  { label: 'Teeth Whitening', href: '/services/teeth-whitening' },
+  { label: 'Braces & Aligners', href: '/services/braces-aligners' },
+  { label: 'Cosmetic Dentistry', href: '/services/smile-makeover' },
 ]
 
 const socialLinks = [
@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="container-custom py-16">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
               <div>
-                <a href="#home" className="flex items-center gap-2 group mb-5">
+                <a href="/" className="flex items-center gap-2 group mb-5">
                   <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center shadow-premium">
                     <span className="text-white font-heading font-bold text-lg">K</span>
                   </div>
@@ -100,7 +100,7 @@ export default function Footer() {
                   </li>
                   <li className="flex items-center gap-3">
                     <HiPhone className="w-5 h-5 text-primary-400 flex-shrink-0" />
-                    <a href="tel:+919876543210" className="text-dark-400 font-alt text-sm hover:text-primary-400 transition-colors">+91 99200 66083</a>
+                    <a href="tel:+919920066083" className="text-dark-400 font-alt text-sm hover:text-primary-400 transition-colors">+91 99200 66083</a>
                   </li>
                   <li className="flex items-center gap-3">
                     <HiMail className="w-5 h-5 text-primary-400 flex-shrink-0" />
