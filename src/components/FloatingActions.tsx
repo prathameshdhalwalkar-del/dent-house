@@ -7,14 +7,14 @@ import { FaWhatsapp } from 'react-icons/fa'
 const buttons = [
   {
     icon: FaWhatsapp,
-    href: 'https://wa.me/919876543210',
+    href: 'https://wa.me/919920066083',
     label: 'WhatsApp',
     color: 'bg-[#25D366] hover:bg-[#20BD5A]',
     delay: 0,
   },
   {
     icon: HiPhone,
-    href: 'tel:+919876543210',
+    href: 'tel:+919920066083',
     label: 'Call',
     color: 'bg-primary-500 hover:bg-primary-600',
     delay: 0.15,

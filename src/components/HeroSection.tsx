@@ -108,7 +108,7 @@ export default function HeroSection() {
                 <HiCalendar className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Book Appointment
               </BookAppointmentBtn>
-              <a href="tel:+919876543210" className="btn-secondary text-base group">
+              <a href="tel:+919920066083" className="btn-secondary text-base group">
                 <HiPhone className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Call Now
               </a>

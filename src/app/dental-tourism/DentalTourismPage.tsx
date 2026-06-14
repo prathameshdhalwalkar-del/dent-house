@@ -34,7 +34,7 @@ const galleryImages = [
 
 const contactInfo = [
   { icon: HiLocationMarker, label: 'Address', value: 'Shop No 3, Vasant Breezy Chambers, Dr. Baba Saheb Ambedkar Road, Kings Cir, Matunga East, Mumbai - 400019' },
-  { icon: HiPhone, label: 'Phone / WhatsApp', value: '+91 98765 43210' },
+  { icon: HiPhone, label: 'Phone / WhatsApp', value: '+91 99200 66083' },
   { icon: HiMail, label: 'Email', value: 'tourism@drkhushboosdenthouse.com' },
   { icon: HiClock, label: 'Working Hours', value: 'Mon - Sat: 10:00 AM - 8:00 PM' },
 ]

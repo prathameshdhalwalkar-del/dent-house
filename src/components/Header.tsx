@@ -61,7 +61,7 @@ export default function Header() {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="tel:+919876543210"
+            href="tel:+919920066083"
             className="flex items-center gap-2 px-4 py-2.5 border-2 border-primary-500/30 text-primary-600 rounded-full hover:bg-primary-50 transition-all font-alt font-medium text-sm"
           >
             <HiPhone className="w-4 h-4" />
@@ -102,7 +102,7 @@ export default function Header() {
               ))}
               <div className="pt-4 space-y-3">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919920066083"
                   className="flex items-center justify-center gap-2 w-full px-5 py-3 border-2 border-primary-500/30 text-primary-600 rounded-full hover:bg-primary-50 transition-all font-alt font-medium"
                 >
                   <HiPhone className="w-5 h-5" /> Call Now

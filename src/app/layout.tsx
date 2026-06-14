@@ -41,7 +41,7 @@ export default function RootLayout({
               name: "Dr. Khushboo's Dent House",
               description: 'Premium dental clinic offering advanced dental care in Matunga, Mumbai.',
               url: 'https://www.drkhushboosdenthouse.com',
-              telephone: '+919876543210',
+              telephone: '+919920066083',
               email: 'info@drkhushboosdenthouse.com',
               address: {
                 '@type': 'PostalAddress',

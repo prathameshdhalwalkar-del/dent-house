@@ -49,7 +49,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <BookAppointmentBtn className="btn-primary text-base px-8 py-4">Book an Appointment</BookAppointmentBtn>
-                <a href="tel:+919876543210" className="btn-outline text-base px-8 py-4 border-white/30 text-white hover:bg-white/10">Call Us</a>
+                <a href="tel:+919920066083" className="btn-outline text-base px-8 py-4 border-white/30 text-white hover:bg-white/10">Call Us</a>
               </div>
             </FadeUp>
           </div>
