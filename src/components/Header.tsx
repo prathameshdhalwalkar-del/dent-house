@@ -38,11 +38,11 @@ export default function Header() {
           <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center shadow-premium group-hover:scale-110 transition-transform">
             <span className="text-white font-heading font-bold text-lg">K</span>
           </div>
-          <div className="hidden sm:block">
-            <h3 className="font-heading font-bold text-dark-900 leading-tight text-lg">
+          <div>
+            <h3 className="font-heading font-bold text-dark-900 leading-tight text-sm sm:text-lg">
               Dr. Khushboo's
             </h3>
-            <p className="text-xs text-dark-500 font-alt -mt-1">Dent House</p>
+            <p className="text-[10px] sm:text-xs text-dark-500 font-alt -mt-1">Dent House</p>
           </div>
         </a>
 
