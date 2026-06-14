@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 
 const cases = [
@@ -13,16 +13,21 @@ const cases = [
 function BeforeAfterSlider({ before, after, title }: { before: string; after: string; title: string }) {
   const [sliderPos, setSliderPos] = useState(50)
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect()
-    const x = ((e.clientX - rect.left) / rect.width) * 100
+  const handleMove = (clientX: number) => {
+    const rect = currentRef.current?.getBoundingClientRect()
+    if (!rect) return
+    const x = ((clientX - rect.left) / rect.width) * 100
     setSliderPos(Math.min(100, Math.max(0, x)))
   }
 
+  const currentRef = useRef<HTMLDivElement>(null)
+
   return (
     <div
+      ref={currentRef}
       className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden cursor-ew-resize group shadow-card"
-      onMouseMove={handleMouseMove}
+      onMouseMove={(e) => handleMove(e.clientX)}
+      onTouchMove={(e) => handleMove(e.touches[0].clientX)}
     >
       <img src={after} alt={`${title} - After`} className="absolute inset-0 w-full h-full object-cover" />
       <div
