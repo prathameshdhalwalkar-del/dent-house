@@ -107,9 +107,18 @@ export default function Header() {
                 >
                   <HiPhone className="w-5 h-5" /> Call Now
                 </a>
-                <BookAppointmentBtn className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-primary text-white rounded-full shadow-premium transition-all font-alt font-medium">
+                <button
+                  onClick={() => {
+                    setIsOpen(false)
+                    setTimeout(() => {
+                      const el = document.getElementById('book-appointment')
+                      if (el) el.scrollIntoView({ behavior: 'smooth' })
+                    }, 100)
+                  }}
+                  className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-gradient-primary text-white rounded-full shadow-premium transition-all font-alt font-medium"
+                >
                   <HiCalendar className="w-5 h-5" /> Book Appointment
-                </BookAppointmentBtn>
+                </button>
               </div>
             </div>
           </motion.div>
