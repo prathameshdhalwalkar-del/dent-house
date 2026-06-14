@@ -118,14 +118,14 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.6 }}
-              className="flex flex-wrap gap-6 mt-10 justify-center lg:justify-start"
+              className="grid grid-cols-2 sm:flex sm:flex-wrap gap-x-6 gap-y-3 mt-10 justify-center lg:justify-start"
             >
               {trustItems.map(({ Icon, label }) => (
                 <div key={label} className="flex items-center gap-2 text-dark-500 group">
                   <div className="w-8 h-8 rounded-full bg-primary-50 flex items-center justify-center group-hover:bg-primary-100 transition-colors">
                     <Icon className="w-4 h-4 text-primary-500" />
                   </div>
-                  <span className="text-sm font-alt font-medium">{label}</span>
+                  <span className="text-sm font-alt font-medium whitespace-nowrap">{label}</span>
                 </div>
               ))}
             </motion.div>
