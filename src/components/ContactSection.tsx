@@ -22,10 +22,25 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '', date: '', time: '', service: '' })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 3000)
+    setSubmitting(true)
+    try {
+      await fetch('/api/book-appointment', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+      setSubmitted(true)
+      setFormData({ name: '', phone: '', email: '', date: '', time: '', service: '' })
+      setTimeout(() => setSubmitted(false), 4000)
+    } catch {
+      alert('Failed to book. Please try again.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
@@ -90,8 +105,8 @@ export default function ContactSection() {
                   <option value="" disabled>Select Service Type</option>
                   {services.map(s => <option key={s} value={s}>{s}</option>)}
                 </select>
-                <button type="submit" className="w-full btn-primary text-base group">
-                  {submitted ? 'Appointment Booked! ✓' : <><HiCalendar className="w-5 h-5 mr-2" /> Book Appointment</>}
+                <button type="submit" disabled={submitting} className="w-full btn-primary text-base group">
+                  {submitting ? 'Booking...' : submitted ? 'Appointment Booked! ✓' : <><HiCalendar className="w-5 h-5 mr-2" /> Book Appointment</>}
                 </button>
               </form>
             </div>
