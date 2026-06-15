@@ -25,7 +25,7 @@ const socialLinks = [
   { icon: FaInstagram, href: 'https://www.instagram.com/drkhushboodenth0use?igsh=MWkxbGZhcnd0MGFjNg', label: 'Instagram' },
   { icon: FaFacebook, href: '#', label: 'Facebook' },
   { icon: FaTwitter, href: '#', label: 'Twitter' },
-  { icon: FaYoutube, href: '#', label: 'YouTube' },
+  { icon: FaYoutube, href: 'https://www.youtube.com/@DrKhushbooDenthouseDental', label: 'YouTube' },
 ]
 
 export default function Footer() {
